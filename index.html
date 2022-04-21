@@ -24,7 +24,7 @@
                 if(today.getDay()==4)   day   =   "星期四 " 
                 if(today.getDay()==5)   day   =   "星期五 " 
                 if(today.getDay()==6)   day   =   "星期六 " 
-                document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " + day;   
+                document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"年"+MM +"月"+ dd +"日";   
                 setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法 
             }   
 
@@ -38,7 +38,7 @@
         </script>
     </head>
     <body onload="startTime()">
-        当前时间：<font color="#33FFFF"><span id="nowDateTimeSpan"></span></font> 
+        当前时间：<font color="#000000"><span id="nowDateTimeSpan"></span></font> 
     </body>
 </html>
 
@@ -54,7 +54,7 @@
 			height: 200px;
 			width:200px;
 			text-align: center; 
-			line-height: 205px;/*文字水平居中*/
+			line-height: 180px;/*文字水平居中*/
 			margin:auto;/*div水平居中*/
 		}
 	</style>
