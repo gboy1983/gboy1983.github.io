@@ -1,63 +1,58 @@
-
-
-
-
-
 <body>
-	<p align="center"><size = "17" color="#99FF00">2022年4月24日</p>
-</body>
-
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-	<style type="text/css">
-		div{
-			height: 200px;
-			width:200px;
-			text-align: center; 
-			line-height: 180px;/*文字水平居中*/
-			margin:auto;/*div水平居中*/
-		}
-	</style>
-</head>
-<body>
-<div id="div1"></div>
-<script>
-    function time() {
-        var date = new Date();
-        var hour = date.getHours();
-        var minutes = date.getMinutes();
-        var seconds = date.getSeconds();
-        var str = "" + hour + ":" + minutes + ":" + seconds + "";
-        var div1 = document.getElementById("div1");
-        div1.innerHTML = str;
+    <p align="center" style="margin-top: 65px;"><size = "17" color="#99FF00">2022年4月24日</p >
+   </body>
+   
+   <html lang="zh-cn">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport"
+             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Document</title>
+    <style type="text/css">
+     div{
+      height: 200px;
+      width:200px;
+      text-align: center; 
+      line-height: 180px;/*文字水平居中*/
+      margin:auto;/*div水平居中*/
+     }
+    </style>
+   </head>
+   <body>
+   <div id="div1" style="margin-top: -90px;"></div>
+   <script>
+       function time() {
+           var date = new Date();
+           var hour = date.getHours();
+           var minutes = date.getMinutes();
+           var seconds = date.getSeconds();
+           var str = "" + hour + ":" + minutes + ":" + seconds + "";
+           var div1 = document.getElementById("div1");
+           div1.innerHTML = str;
+       }
+     function checkTime(i)   
+               {   
+                   if (i<10){
+                       i="0" + i;
+                   }   
+                     return i;
+               }  
+       setInterval(time,1000);
+   </script>
+   </body>
+   </html>
+   <style type="text/css">
+    body{
+     background: url("https://gboy1983.github.io/back.gif") no-repeat TOP center scroll;
+                   /*兼容浏览器版本*/
+                   -webkit-background-size: cover;
+                   -o-background-size: cover;                
+                   background-size: cover;
     }
-	 function checkTime(i)   
-            {   
-                if (i<10){
-                    i="0" + i;
-                }   
-                  return i;
-            }  
-    setInterval(time,1000);
-</script>
-</body>
-</html>
-<style type="text/css">
-	body{
-		background: url("https://gboy1983.github.io/back.gif") no-repeat TOP center scroll;
-                /*兼容浏览器版本*/
-                -webkit-background-size: cover;
-                -o-background-size: cover;                
-                background-size: cover;
-	}
-	</style>
-
-<body>
-	<p align="center">04-24 15:30</p>
-	<p align="center">04-24 24:00</p>
-</body>
+    </style>
+   
+   <body>
+    <p align="center" style="margin-top: 310px; margin-left: 235px;">04-24 15:30</p >
+    <p align="center" style="margin-top: 10px; margin-left: 235px;">04-24 24:00</p >
+   </body>
