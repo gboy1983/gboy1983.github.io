@@ -1,15 +1,14 @@
 <html>
     <head>
         <title>网页中动态的显示系统日期时间</title>
-	    <style type="text/css">
-		div{
-			height: 200px;
-			width:200px;
-			text-align: center; 
-			line-height: 100px;/*文字水平居中*/
-			margin:auto;/*div水平居中*/
-		}
-	</style>
+	   <style>
+           {
+                position: absolute;
+                top: 120px;
+                left: 20px;
+            } 
+
+        </style>
         <script language="JavaScript">
             function startTime()   
             {   
@@ -47,7 +46,7 @@
         </script>
     </head>
     <body onload="startTime()">
-        <font color="#000000"><span id="nowDateTimeSpan"></span></font>;/*日字体颜色*/
+        <font color="#000000"><span id="nowDateTimeSpan"></span></font>;
     </body>
 </html>
 
